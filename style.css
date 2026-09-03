@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f3ff;
+  color: #2d2a3a;
+}
+
+header {
+  background-color: #f5a504;
+  color: white;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.tool-card {
+  background-color: white;
+  border: 1px solid #f1faad;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(55, 45, 90, 0.08);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #f3f777;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f6a614;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f68505;
+}
