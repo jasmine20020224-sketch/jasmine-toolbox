@@ -18,12 +18,24 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 main {
-  max-width: 760px;
+  max-width: 1100px;
   margin: 32px auto;
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .tool-card {
@@ -31,7 +43,6 @@ main {
   border: 1px solid #f1faad;
   border-radius: 16px;
   padding: 24px;
-  margin-bottom: 20px;
   box-shadow: 0 8px 20px rgba(55, 45, 90, 0.08);
 }
 
@@ -60,4 +71,28 @@ button {
 
 button:hover {
   background-color: #f68505;
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 36px 16px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
 }
